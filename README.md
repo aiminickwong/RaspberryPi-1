@@ -15,6 +15,7 @@
 
 ## 笔记文档
 
+* [0007_Systemd_Cron_rc-local.md](docs/0007_Systemd_Cron_rc-local.md)
 * [0006_Device_Tree_Overlays.md](docs/0006_Device_Tree_Overlays.md)
 * [0005_raspi-config.md](docs/0005_raspi-config.md)
 * [0004_Pin_Config.md](docs/0004_Pin_Config.md)
