@@ -11,7 +11,13 @@
 * [Raspberry Pi](https://www.raspberrypi.org/)
 * [Raspberry Pi On GitHub](https://github.com/raspberrypi)
 * [Raspberry Pi Documentation](https://github.com/raspberrypi/documentation)
+* [Raspberry Pi Pinout](https://pinout.xyz/pinout/uart)
 
 ## 笔记文档
 
+* [0006_Device_Tree_Overlays.md](docs/0006_Device_Tree_Overlays.md)
+* [0005_raspi-config.md](docs/0005_raspi-config.md)
+* [0004_Pin_Config.md](docs/0004_Pin_Config.md)
+* [0003_BIOS.md](docs/0003_BIOS.md)
+* [0002_Boot_Sequence.md](docs/0002_Boot_Sequence.md)
 * [0001_OTG_To_Ethernet.md](docs/0001_OTG_To_Ethernet.md)
