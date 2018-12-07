@@ -20,7 +20,7 @@
 * 让树莓派通过USB获取网络：
   * 在有网的网口共享到树莓派USB生成的网口，网卡设定里进行网络共享；
   * 树莓派在PC机上生成的网口变成了网关，可以直接查看树莓派网段地址：`192.168.137.1`；
-  * 使用Windows下的nmap进行IP扫描：`192.168.137.168`  
+  * 使用Windows下的nmap进行IP扫描：`192.168.137.168`，这个IP有时候会自动变化的，所以连不上就可能要扫描一下  
     ![./images/Zenmap_Scan_RPI_USB_OTG_IP.png](./images/Zenmap_Scan_RPI_USB_OTG_IP.png)
 * 在使用Putty通过Hostname进行SSH连接访问的时候会出现找不到的问题，建议直接用IP访问；
 * 桌面版的系统启动稍微有点慢，终端板的系统快一些，在`raspi-config`命令中可以选择终端或者桌面模式；

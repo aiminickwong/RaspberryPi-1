@@ -15,6 +15,7 @@
 
 ## 笔记文档
 
+* [0008_Systemd_Advance.md](docs/0008_Systemd_Advance.md)
 * [0007_Systemd_Cron_rc-local.md](docs/0007_Systemd_Cron_rc-local.md)
 * [0006_Device_Tree_Overlays.md](docs/0006_Device_Tree_Overlays.md)
 * [0005_raspi-config.md](docs/0005_raspi-config.md)
