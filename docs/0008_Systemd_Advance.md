@@ -41,6 +41,17 @@ sysvinit | systemd target | 备注
 6           | reboot.target     | 重启
 emergency   | emergency.target  | 紧急shell
 
+```
+pi@raspberrypi:/lib/systemd/system $ ls -al runlevel*
+lrwxrwxrwx 1 root root   15 Oct 28 17:02 runlevel0.target -> poweroff.target
+lrwxrwxrwx 1 root root   13 Oct 28 17:02 runlevel1.target -> rescue.target
+lrwxrwxrwx 1 root root   17 Oct 28 17:02 runlevel2.target -> multi-user.target
+lrwxrwxrwx 1 root root   17 Oct 28 17:02 runlevel3.target -> multi-user.target
+lrwxrwxrwx 1 root root   17 Oct 28 17:02 runlevel4.target -> multi-user.target
+lrwxrwxrwx 1 root root   16 Oct 28 17:02 runlevel5.target -> graphical.target
+lrwxrwxrwx 1 root root   13 Oct 28 17:02 runlevel6.target -> reboot.target
+```
+
 ## 基本概念
 
 * service：用于封装一个后台服务进程；

@@ -12,9 +12,11 @@
 * [Raspberry Pi On GitHub](https://github.com/raspberrypi)
 * [Raspberry Pi Documentation](https://github.com/raspberrypi/documentation)
 * [Raspberry Pi Pinout](https://pinout.xyz/pinout/uart)
+* [systemd](https://github.com/systemd/systemd)
 
 ## 笔记文档
 
+* [0009_systemd-sysv-generator.md](docs/0009_systemd-sysv-generator.md)
 * [0008_Systemd_Advance.md](docs/0008_Systemd_Advance.md)
 * [0007_Systemd_Cron_rc-local.md](docs/0007_Systemd_Cron_rc-local.md)
 * [0006_Device_Tree_Overlays.md](docs/0006_Device_Tree_Overlays.md)
