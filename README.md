@@ -6,6 +6,10 @@
 
 [博客园 - 随笔分类 - Raspberry Pi](https://www.cnblogs.com/zengjfgit/category/783268.html)
 
+## ZERO W接口原理图
+
+![docs/images/RPI_Zero_W_40_Pin.png](docs/images/RPI_Zero_W_40_Pin.png)
+
 ## 参考文档
 
 * [Raspberry Pi](https://www.raspberrypi.org/)
@@ -16,6 +20,7 @@
 
 ## 笔记文档
 
+* [0010_I2C_AT24C0x.md](docs/0010_I2C_AT24C0x.md)
 * [0009_systemd-sysv-generator.md](docs/0009_systemd-sysv-generator.md)
 * [0008_Systemd_Advance.md](docs/0008_Systemd_Advance.md)
 * [0007_Systemd_Cron_rc-local.md](docs/0007_Systemd_Cron_rc-local.md)

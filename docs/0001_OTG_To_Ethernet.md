@@ -24,3 +24,5 @@
     ![./images/Zenmap_Scan_RPI_USB_OTG_IP.png](./images/Zenmap_Scan_RPI_USB_OTG_IP.png)
 * 在使用Putty通过Hostname进行SSH连接访问的时候会出现找不到的问题，建议直接用IP访问；
 * 桌面版的系统启动稍微有点慢，终端板的系统快一些，在`raspi-config`命令中可以选择终端或者桌面模式；
+* 如果树莓派0已经连接了WiFi，那么使用USB OTG网卡的时候会出现问题，所以在使用USB OTG网卡的时候，将WiFi网卡重置一下，忘记密码；
+* PUTTY SSH登陆的时候可以使用Hostname代替IP登陆，树莓派0 W目前我使用raspberrypi来登陆；
