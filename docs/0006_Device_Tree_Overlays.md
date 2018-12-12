@@ -9,6 +9,7 @@
 * [设备树叠加层](https://source.android.google.cn/devices/architecture/dto/?hl=zh-cn)
 * [树莓派 -- i2c学习 续（1） DeviceTree Overlay实例化rtc](https://blog.csdn.net/feiwatson/article/details/81072640)
 * [Device Tree Overlay Notes](https://www.kernel.org/doc/Documentation/devicetree/overlay-notes.txt)
+* [OSD335x Lesson 2: Linux Device Tree Overlay](https://octavosystems.com/app_notes/osd335x-design-tutorial/osd335x-lesson-2-minimal-linux-boot/linux-device-tree-overlay/)
 
 ## 树莓派当前支持的dtbo
 

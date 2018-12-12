@@ -20,6 +20,7 @@
 
 ## 笔记文档
 
+* [0012_Dynamic_Device_Tree.md](docs/0012_Dynamic_Device_Tree.md)
 * [0011_SPI.md](docs/0011_SPI.md)
 * [0010_I2C_AT24C0x.md](docs/0010_I2C_AT24C0x.md)
 * [0009_systemd-sysv-generator.md](docs/0009_systemd-sysv-generator.md)
