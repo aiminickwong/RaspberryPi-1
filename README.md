@@ -20,6 +20,8 @@
 
 ## 笔记文档
 
+* [0014_Ethernet_over_USB-Static_IP.md](docs/0014_Ethernet_over_USB-Static_IP.md)
+* [0013_dtoverlay.md](docs/0013_dtoverlay.md)
 * [0012_Dynamic_Device_Tree.md](docs/0012_Dynamic_Device_Tree.md)
 * [0011_SPI.md](docs/0011_SPI.md)
 * [0010_I2C_AT24C0x.md](docs/0010_I2C_AT24C0x.md)

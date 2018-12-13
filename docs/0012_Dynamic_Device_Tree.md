@@ -23,12 +23,12 @@ Every node in the tree that represents a device is required to have the compatib
 
 ```Kconfig
 menuconfig OF
-	bool "Device Tree and Open Firmware support"
-	help
-	  This option enables the device tree infrastructure.
-	  It is automatically selected by platforms that need it or can
-	  be enabled manually for unittests, overlays or
-	  compile-coverage.
+    bool "Device Tree and Open Firmware support"
+    help
+      This option enables the device tree infrastructure.
+      It is automatically selected by platforms that need it or can
+      be enabled manually for unittests, overlays or
+      compile-coverage.
 ```
 
 ## CONFIG_OF_DYNAMIC
@@ -39,12 +39,12 @@ menuconfig OF
 # Hardly any platforms need this.  It is safe to select, but only do so if you
 # need it.
 config OF_DYNAMIC
-	bool "Support for dynamic device trees" if OF_UNITTEST
-	select OF_KOBJ
-	help
-	  On some platforms, the device tree can be manipulated at runtime.
-	  While this option is selected automatically on such platforms, you
-	  can enable it manually to improve device tree unit test coverage.
+    bool "Support for dynamic device trees" if OF_UNITTEST
+    select OF_KOBJ
+    help
+      On some platforms, the device tree can be manipulated at runtime.
+      While this option is selected automatically on such platforms, you
+      can enable it manually to improve device tree unit test coverage.
 ```
 
 ## OF_OVERLAY
@@ -53,15 +53,15 @@ config OF_DYNAMIC
 
 ```
 config OF_OVERLAY
-	bool "Device Tree overlays"
-	select OF_DYNAMIC
-	select OF_FLATTREE
-	select OF_RESOLVE
-	help
-	  Overlays are a method to dynamically modify part of the kernel's
-	  device tree with dynamically loaded data.
-	  While this option is selected automatically when needed, you can
-	  enable it manually to improve device tree unit test coverage.
+    bool "Device Tree overlays"
+    select OF_DYNAMIC
+    select OF_FLATTREE
+    select OF_RESOLVE
+    help
+      Overlays are a method to dynamically modify part of the kernel's
+      device tree with dynamically loaded data.
+      While this option is selected automatically when needed, you can
+      enable it manually to improve device tree unit test coverage.
 ```
 
 ## U-Boot Device Tree Modify
@@ -74,5 +74,13 @@ fdt set - set node properties: `fdt set /amba/usb0 status "disabled"`
   * 在新版本的U-Boot中，貌似可以通过`fdt apply`来直接应用设备树overlays：[Boot-time Device Tree Overlays with U-Boot Jul 24](http://irq5.io/2018/07/24/boot-time-device-tree-overlays-with-u-boot/)
   * 树莓派命令行工具：[`dtoverlay`](https://github.com/raspberrypi/userland/tree/master/host_applications/linux/apps/dtoverlay)
     * `run_cmd("dtc -I fs -O dtb -o '%s' /proc/device-tree 1>/dev/null 2>&1", overlay_file)`: [Debugging - random hints](https://elinux.org/Device_Tree_Reference)，这里可以通过dtc命令直接获取到当前运行时的dtb；
-	* 再逆向出数据并修改数据；
-	* 再保存成原来的dtb；
+      ```
+      pi@raspberrypi:/proc/device-tree $ ls
+      #address-cells  compatible          memory         phy            system
+      aliases         fixedregulator_3v3  memreserve     serial-number  thermal-zones
+      axi             fixedregulator_5v0  model          #size-cells
+      chosen          interrupt-parent    name           soc
+      clocks          leds                __overrides__  __symbols__
+      ```
+    * 再逆向出数据并修改数据；
+    * 再保存成原来的dtb；
