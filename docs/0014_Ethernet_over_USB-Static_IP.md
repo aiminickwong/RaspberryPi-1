@@ -16,3 +16,5 @@ static ip_address=192.168.137.2/24
 static routers=192.168.137.1
 static domain_name_servers=8.8.8.8
 ```
+
+上面的routers字段，如果不想使用这个路由，没必要设定；

@@ -38,6 +38,13 @@ rtt min/avg/max/mdev = 14.147/25.163/36.180/11.017 ms
 root@raspberrypi:/home/pi#
 ```
 
-## linux下设置永久路由的方法
+## 错误原因
 
-在`/etc/rc.local`里添加。
+`/etc/dhcpcd.conf`：
+```
+[...省略]
+interface usb0
+static ip_address=192.168.137.2/24
+static routers=192.168.137.1                        # 去掉这个默认路由设定
+static domain_name_servers=8.8.8.8
+```
