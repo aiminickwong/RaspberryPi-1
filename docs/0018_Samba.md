@@ -1,7 +1,8 @@
 # Samba
 
-## 配置说明文档
+## 参考文档
 
+* [Create a NAS with your Raspberry Pi and Samba](https://howtoraspberrypi.com/create-a-nas-with-your-raspberry-pi-and-samba/)
 * [smb.conf — The configuration file for the Samba suite](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)
 
 ## 基本操作
