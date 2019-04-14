@@ -20,6 +20,7 @@
 
 ## 笔记文档
 
+* [0019_Kernel_Build.md](docs/0019_Kernel_Build.md)
 * [0018_Samba.md](docs/0018_Samba.md)
 * [0017_Internationalisation_Options.md](docs/0017_Internationalisation_Options.md)
 * [0016_Setup_Multiple_WiFi_Networks.md](docs/0016_Setup_Multiple_WiFi_Networks.md)
