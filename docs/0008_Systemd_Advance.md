@@ -1,5 +1,8 @@
 # Systemd Advance
 
+rc.local调用简要关系：  
+![images/rc-local_call_route.png](images/rc-local_call_route.png)
+
 ## 参考文档
 
 * [树莓派启动的相关问题](http://elmagnifico.me/2015/11/12/RaspberryStartup-6/)
@@ -8,6 +11,7 @@
 * [Systemd 入门教程：命令篇](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
 * [Systemd 入门教程：实战篇](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html)
 * [Systemd FAQ (简体中文)](https://wiki.archlinux.org/index.php/Systemd_FAQ_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+* [systemctl enable rc-local.service error](https://www.cnblogs.com/zengjfgit/p/10997034.html)
 
 ## init真相
 
@@ -142,6 +146,8 @@ lrwxrwxrwx 1 root root   13 Oct 28 17:02 runlevel6.target -> reboot.target
 ## Systemd Squence
 
 在系统启动时，systemd 默认启动 default.target 单元， 该单元中应该包含所有你想在开机时默认启动的单元。 但实际上，它通常只是一个指向 graphical.target (图形界面) 或 multi-user.target (命令行界面，常用于嵌入式或服务器环境， 一般是 graphical.target 的一个子集)的符号连接。
+
+此外在`/etc/systemd/system`目录下还可以看到诸如*.wants 的目录，放在该目录下的配置单元文件等同于在[Unit]小节中的 wants 关键字，即本单元启动时，还需要启动这些单元。
 
 目前跟得是非图形界面得树莓派系统版本；
 

@@ -1,6 +1,6 @@
 # systemd-sysv-generator
 
-systemd已经没有了启动等级的问题，采用target的方式，那么传统的init.d里面的脚本怎么使用就成了问题，所以有了`systemd-sysv-generator`，会进行转换，那些脚本需要添加响应的描述头便于信息提取转换。
+systemd已经没有了启动等级的问题，采用target的方式，那么传统的init.d里面的脚本怎么使用就成了问题，所以有了`systemd-sysv-generator`，会进行转换，那些脚本需要添加相应的描述头便于信息提取转换。
 
 ## 参考文档
 
