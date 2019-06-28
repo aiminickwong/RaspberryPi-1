@@ -20,6 +20,7 @@
 
 ## 笔记文档
 
+* [0021_Auto_Send_Mail.md](docs/0021_Auto_Send_Mail.md)
 * [0020_PWM](https://github.com/ZengjfOS/RPiPWM)
 * [0019_Kernel_Build.md](docs/0019_Kernel_Build.md)
 * [0018_Samba.md](docs/0018_Samba.md)
