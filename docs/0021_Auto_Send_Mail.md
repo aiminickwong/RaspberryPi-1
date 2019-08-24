@@ -7,18 +7,38 @@
 ## code
 
 ```python
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import subprocess
 import smtplib
 from email.mime.text import MIMEText
 import datetime
+import time
+import os
+
+def check_ping():
+    hostname = "www.baidu.com"
+    response = os.system("ping -c 1 " + hostname)
+
+    # and then check the response...
+    if response == 0:
+        pingstatus = True
+    else:
+        pingstatus = False
+
+    return pingstatus
+
+while True:
+    if check_ping():
+        break
+
+    time.sleep(1)
 
 # Change to your own account information
 # Account Information
 to            = 'zengjf42@163.com'           # Email to send to.
 mail_user     = 'zengjf42@163.com'           # Email to send from.
-mail_password = '<Authorization code>'       # Email password.
+mail_password = 'zjf199042zjf'               # Email password.
 smtpserver    = smtplib.SMTP('smtp.163.com') # Server to use.
 
 smtpserver.ehlo()                            # Says 'hello' to the server
@@ -31,13 +51,14 @@ arg='ifconfig -a'                            # Linux command to retrieve ip addr
 # Runs 'arg' in a 'hidden terminal'.
 p=subprocess.Popen(arg, shell=True, stdout=subprocess.PIPE)
 data = p.communicate()                       # Get data from 'p terminal'.
-print(data)
+# print(data)
 
 # get ip data
 ip_lines = data[0].splitlines()
 ips = ""
 for ip in ip_lines:
-   ips += ip.decode("utf-8") + "\n"
+    ips += ip.decode("utf-8") + "\n"
+
 
 # Creates the text, subject, 'from', and 'to' of the message.
 msg = MIMEText(ips)
