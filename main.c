@@ -113,10 +113,12 @@ int main(void)
 	PORTA = 0;
 	PORTB = 1;
 	PORTC = 0;
-	PORTD = 0xFF;
+	// PORTD = 0xFF;
+	PORTD = 0x00;
 	DDRB = EE_WP | FRAME_INT | KEYS_INT;
 	DDRC = LED_SDI | LED_CLKR | LED_LE | LED_OE_N;
-	DDRD = 0xFF;
+	// DDRD = 0xFF;
+	DDRD = 0x00;
 
 	TCCR0A = (1<<CS12);
 	TWBR = 0xff;

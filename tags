@@ -1,0 +1,75 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	8;"	m
+CONF_READ	main.c	65;"	e	enum:__anon1	file:
+CONF_WRITE	main.c	64;"	e	enum:__anon1	file:
+DAT_LATCH	main.c	63;"	e	enum:__anon1	file:
+DET_OPEN	main.c	68;"	e	enum:__anon1	file:
+DET_OPEN_SHORT	main.c	70;"	e	enum:__anon1	file:
+DET_SHORT	main.c	69;"	e	enum:__anon1	file:
+DFLAGS	Makefile	14;"	m
+EE_WP	main.c	38;"	d	file:
+EXTRA_CLEAN_FILES	Makefile	79;"	m
+FIG2DEV	Makefile	78;"	m
+FLAGS	Makefile	13;"	m
+FRAME_INT	main.c	40;"	d	file:
+GAIN_READ	main.c	67;"	e	enum:__anon1	file:
+GAIN_WRITE	main.c	66;"	e	enum:__anon1	file:
+I2C_OFF	rpi-sense.S	38;"	d
+KEYS_INT	main.c	39;"	d	file:
+LED_CLKR	main.c	43;"	d	file:
+LED_LE	main.c	44;"	d	file:
+LED_OE_N	main.c	46;"	d	file:
+LED_SDI	main.c	45;"	d	file:
+LED_SDO	main.c	42;"	d	file:
+LINE	rpi-sense.S	35;"	d
+Lframe_loop	rpi-sense.S	91;"	l
+Lline_loop	rpi-sense.S	96;"	l
+Lpwm_loop	rpi-sense.S	123;"	l
+MCU_TARGET	Makefile	4;"	m
+OBJ	Makefile	2;"	m
+OBJCOPY	Makefile	16;"	m
+OBJDUMP	Makefile	17;"	m
+OPTIMIZE	Makefile	6;"	m
+PARAM	rpi-sense.S	36;"	d
+PRG	Makefile	1;"	m
+PWM	rpi-sense.S	37;"	d
+REG_ADDR	main.c	56;"	g	file:
+REG_CFG_HIGH	main.c	59;"	e	enum:REG_ADDR	file:
+REG_CFG_LOW	main.c	58;"	e	enum:REG_ADDR	file:
+REG_ID	main.c	57;"	e	enum:REG_ADDR	file:
+SFLAGS	Makefile	12;"	m
+THERM_READ	main.c	71;"	e	enum:__anon1	file:
+TWI_vect	rpi-sense.S	292;"	l
+clr	main.c	49;"	d	file:
+delay	rpi-sense.S	185;"	l
+draw_loop	rpi-sense.S	90;"	l
+i2c_reg	main.c	109;"	v
+keys	main.c	108;"	v
+ldone	rpi-sense.S	343;"	l
+le_key	main.c	72;"	t	typeref:enum:__anon1	file:
+lframeend	rpi-sense.S	157;"	l
+lloop	rpi-sense.S	189;"	l
+lrack	rpi-sense.S	352;"	l
+lrdone	rpi-sense.S	341;"	l
+lreceive	rpi-sense.S	314;"	l
+lree	rpi-sense.S	324;"	l
+lrspixel	rpi-sense.S	332;"	l
+lrsreg	rpi-sense.S	329;"	l
+ltdnack	rpi-sense.S	357;"	l
+ltdone	rpi-sense.S	402;"	l
+ltsee	rpi-sense.S	386;"	l
+ltsend	rpi-sense.S	359;"	l
+ltskeys	rpi-sense.S	381;"	l
+ltspixel	rpi-sense.S	392;"	l
+ltsver	rpi-sense.S	377;"	l
+ltswai	rpi-sense.S	373;"	l
+main	main.c	111;"	f
+pixels	main.c	74;"	v
+read_data	rpi-sense.S	242;"	l
+set	main.c	48;"	d	file:
+write_data	rpi-sense.S	202;"	l
