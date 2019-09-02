@@ -84,3 +84,4 @@ fdt set - set node properties: `fdt set /amba/usb0 status "disabled"`
       ```
     * 再逆向出数据并修改数据；
     * 再保存成原来的dtb；
+    * [0013_dtoverlay.md](0013_dtoverlay.md)

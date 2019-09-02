@@ -20,6 +20,7 @@
 
 ## 笔记文档
 
+* [0023_Sense_HAT.md](docs/0023_Sense_HAT.md)
 * [0022_GPIO_Interrupt.md](docs/0022_GPIO_Interrupt.md)
 * [0021_Auto_Send_Mail.md](docs/0021_Auto_Send_Mail.md)
 * [0020_PWM](https://github.com/ZengjfOS/RPiPWM)
