@@ -134,7 +134,7 @@
     Problem reading scan element information
     diag /sys/bus/iio/devices/iio:device0
     ```
-  * 没有生成`/sys/bus/iio/devices/iio:device0/scan_elements`导致的，暂时不处理；
+  * 没有生成`/sys/bus/iio/devices/iio:device0/scan_elements`导致的，经分析代码发现，由于没有使用中断导致没有注册buffer导致的；
 
 ## Sense HAT API
 
