@@ -16,6 +16,7 @@ https://github.com/raspberrypi/userland/tree/master/host_applications/linux/apps
   pi@raspberrypi:~ $ mount | grep config
   configfs on /sys/kernel/config type configfs (rw,relatime)
   ```
+  * `mount -t configfs none /sys/kernel/config`
 * 查看目录 
   ```
   pi@raspberrypi:~ $ ls /sys/kernel/config

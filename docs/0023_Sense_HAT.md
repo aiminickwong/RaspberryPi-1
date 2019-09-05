@@ -26,3 +26,118 @@
 * `git clone https://github.com/raspberrypi/rpi-sense`
 * `make`
 * `make flash`
+
+## lsm9ds1 i2c device
+
+* https://github.com/FrankBau/raspi-repo-manifest/wiki/device-tree#device-tree-overlays-sense-hat
+  ```
+  // rpi-sense HAT
+  /dts-v1/;
+  /plugin/;
+  
+  / {
+  	compatible = "brcm,bcm2708", "brcm,bcm2709";
+  
+  	fragment@0 {
+  		target = <&i2c1>;
+  		__overlay__ {
+  			#address-cells = <1>;
+  			#size-cells = <0>;
+  			status = "okay";
+  
+  			rpi-sense@46 {
+  				compatible = "rpi,rpi-sense";
+  				reg = <0x46>;
+  				keys-int-gpios = <&gpio 23 1>;
+  				status = "okay";
+  			};
+  
+  			lsm9ds1-magn@1c {
+  				compatible = "st,lsm9ds1-magn";
+  				reg = <0x1c>;
+  				status = "okay";
+  			};
+  
+  			lsm9ds1-accel6a {
+  				compatible = "st,lsm9ds1-accel";
+  				reg = <0x6a>;
+  				status = "okay";
+  			};
+  
+  			lps25h-press@5c {
+  				compatible = "st,lps25h-press";
+  				reg = <0x5c>;
+  				status = "okay";
+  			};
+  
+  			hts221-humid@5f {
+  				compatible = "st,hts221-humid";
+  				reg = <0x5f>;
+  				status = "okay";
+  			};
+  		};
+  	};
+  };
+  ```
+* 检查设备
+  ```
+  root@raspberrypi:/sys/bus/i2c/devices# ls
+  1-001c  1-0046  1-005c  1-005f  1-006a  i2c-1
+  root@raspberrypi:/sys/bus/i2c/devices# cat 1-001c/name
+  lsm9ds1-magn
+  root@raspberrypi:/sys/bus/i2c/devices# cat 1-0046/name
+  rpi-sense
+  root@raspberrypi:/sys/bus/i2c/devices# cat 1-005c/name
+  lps25h-press
+  root@raspberrypi:/sys/bus/i2c/devices# cat 1-005f/name
+  hts221-humid
+  root@raspberrypi:/sys/bus/i2c/devices# cat 1-006a/name
+  lsm9ds1-accel
+  ```
+* `/proc/device-tree/soc/i2c@7e804000/lsm9ds1-magn@1c`
+* `cat /proc/device-tree/soc/i2c@7e804000/lsm9ds1-magn@1c/compatible`
+  * "st,lsm9ds1-magn"
+* diff from ST [linux driver](https://www.st.com/en/mems-and-sensors/lsm9ds1.html#)
+  ```diff
+  diff --git a/st_magn/st_mag3d_i2c.c b/st_magn/st_mag3d_i2c.c
+  index e8c7d0a..4741f3b 100644
+  --- a/st_magn/st_mag3d_i2c.c
+  +++ b/st_magn/st_mag3d_i2c.c
+  @@ -66,7 +66,7 @@ static const struct of_device_id st_mag3d_id_table[] = {
+                  .compatible = "st,lis3mdl_magn",
+          },
+          {
+  -               .compatible = "st,lsm9ds1_magn",
+  +               .compatible = "st,lsm9ds1-magn",
+          },
+          {},
+   };
+  ```
+* [lsm9ds1 driver](https://github.com/ZengjfOS/RaspberryPi/tree/lsm9ds1_driver)
+  * [Build Kernel Modules](0024_Kernel_Modules.md)
+  * `make`
+  * `sudo ./modules.sh insmod`
+* 确认设备节点：`/dev/iio:device0`
+* sysfs没有trigger
+  ```
+  pi@raspberrypi:~ $ ls /sys/bus/iio/devices/
+  iio:device0
+  pi@raspberrypi:~ $ ls /sys/bus/iio/devices/iio\:device0
+  current_timestamp_clock  in_magn_x_raw    in_magn_y_raw    in_magn_z_raw    name     power               sampling_frequency_available  uevent
+  dev                      in_magn_x_scale  in_magn_y_scale  in_magn_z_scale  of_node  sampling_frequency  subsystem
+  ```
+* [iio-tools](https://github.com/ZengjfOS/iio-tools)
+  * `./iio_generic_buffer -N 0 -g`
+    ```
+    iio device number being used is 0
+    trigger-less mode selected
+    Problem reading scan element information
+    diag /sys/bus/iio/devices/iio:device0
+    ```
+  * 没有生成`/sys/bus/iio/devices/iio:device0/scan_elements`导致的，暂时不处理；
+
+## Sense HAT API
+
+* https://pythonhosted.org/sense-hat/api/
+* https://github.com/astro-pi/python-sense-hat/blob/master/examples/README.md
+
