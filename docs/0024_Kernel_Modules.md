@@ -69,8 +69,8 @@
 * `dmesg`查看log输出；
 * `sudo cp hello.ko /lib/modules/4.19.57-v7l+/kernel/`
 * `depmod -a`
+* `cat /lib/modules/4.19.57-v7l+/modules.order`
   ```
-  root@raspberrypi:/# cat /lib/modules/4.19.57-v7l+/modules.order
   kernel/arch/arm/crypto/aes-arm.ko
   kernel/arch/arm/crypto/aes-arm-bs.ko
   kernel/arch/arm/crypto/sha1-arm.ko
@@ -81,7 +81,7 @@
   hello.ko
   ```
 * `modprobe hello`
-* `vim /etc/modules`
+* `cat /etc/modules`
   ```
   # /etc/modules: kernel modules to load at boot time.
   #

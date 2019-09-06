@@ -14,6 +14,13 @@
 * 修改：`/boot/config.txt`
   * removed the "#" in front of the line "hdmi_force_hotplug=1" and now the Raspberry Pi is booting attached with the SenseHAT.
 
+## 为什么树莓派会自动加载Sense HAT的设备树及驱动
+
+* [Part 3: Using Device Trees on Raspberry Pi](https://www.raspberrypi.org/documentation/configuration/device-tree.md)
+  * In order to manage Device Tree and overlays, the loader supports a number of new config.txt directives.
+  * The loader will also search for an attached HAT with a programmed EEPROM, and load the supporting overlay from there; this happens without any user intervention.
+  * 自动加载驱动：`/etc/modules`
+
 ## rpi-sense firmware 
 
 * 使用`raspi-config`打开I2C、SPI接口；
@@ -26,6 +33,10 @@
 * `git clone https://github.com/raspberrypi/rpi-sense`
 * `make`
 * `make flash`
+
+### AVR Assembler
+
+* [AVR Assembler Instructions](https://www.microchip.com/webdoc/avrassembler/avrassembler.wb_BRBC.html)
 
 ## lsm9ds1 i2c device
 
