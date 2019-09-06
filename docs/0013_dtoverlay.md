@@ -185,3 +185,12 @@ https://github.com/raspberrypi/userland/tree/master/host_applications/linux/apps
          return data;
       }
       ```
+
+## Sense HAT DTS modify
+
+* 参考：
+  * [0023_Sense_HAT.md](0023_Sense_HAT.md)
+  * [configfs-overlays.txt](https://github.com/Xilinx/linux-xlnx/blob/master/Documentation/devicetree/configfs-overlays.txt)
+* [rpi-sense-overlay](https://github.com/ZengjfOS/RaspberryPi/tree/rpi-sense-overlay)
+  * `make`
+  * `sudo ./run.sh`
