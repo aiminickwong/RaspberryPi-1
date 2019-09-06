@@ -3,6 +3,7 @@
 ## 参考文档
 
 * [How compile a loadable kernel module without recompiling kernel](https://raspberrypi.stackexchange.com/questions/39845/how-compile-a-loadable-kernel-module-without-recompiling-kernel)
+* [Compiling Kernel Modules for Raspberry Pi](https://bchavez.bitarmory.com/compiling-kernel-modules-for-raspberry-pi/#)
 
 ## install kernel headers
 
@@ -66,3 +67,27 @@
   ```
 * [hello_module source code branch](https://github.com/ZengjfOS/RaspberryPi/tree/hello_module)
 * `dmesg`查看log输出；
+* `sudo cp hello.ko /lib/modules/4.19.57-v7l+/kernel/`
+* `depmod -a`
+  ```
+  root@raspberrypi:/# cat /lib/modules/4.19.57-v7l+/modules.order
+  kernel/arch/arm/crypto/aes-arm.ko
+  kernel/arch/arm/crypto/aes-arm-bs.ko
+  kernel/arch/arm/crypto/sha1-arm.ko
+  [...省略]
+  kernel/lib/ts_bm.ko
+  kernel/lib/ts_fsm.ko
+  kernel/lib/lru_cache.ko
+  hello.ko
+  ```
+* `modprobe hello`
+* `vim /etc/modules`
+  ```
+  # /etc/modules: kernel modules to load at boot time.
+  #
+  # This file contains the names of kernel modules that should be loaded
+  # at boot time, one per line. Lines beginning with "#" are ignored.
+  
+  i2c-dev
+  hello
+  ```
