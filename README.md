@@ -20,6 +20,7 @@
 
 ## 笔记文档
 
+* [0026_libdrm_modetest.md](docs/0026_libdrm_modetest.md)
 * [0025_Vim_Support_Mouse_Paste.md](docs/0025_Vim_Support_Mouse_Paste.md)
 * [0024_Kernel_Modules.md](docs/0024_Kernel_Modules.md)
 * [0023_Sense_HAT.md](docs/0023_Sense_HAT.md)
