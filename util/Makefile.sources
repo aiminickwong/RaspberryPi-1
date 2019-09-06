@@ -1,0 +1,4 @@
+UTIL_FILES := \
+	format.c \
+	kms.c \
+	pattern.c \
