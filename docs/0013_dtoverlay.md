@@ -194,3 +194,15 @@ https://github.com/raspberrypi/userland/tree/master/host_applications/linux/apps
 * [rpi-sense-overlay](https://github.com/ZengjfOS/RaspberryPi/tree/rpi-sense-overlay)
   * `make`
   * `sudo ./run.sh`
+
+## Device Tree Blob Overlay Configuration File System
+
+* 如果你想知道`configfs`中`overlay`是怎么工作的，可以参考: https://github.com/ikwzm/dtbocfg
+* `git clone https://github.com/ikwzm/dtbocfg.git`
+* `cd dtbocfg`
+* `make`
+  ```
+  pi@raspberrypi:~/zengjf/dtbocfg $ ls
+  dtbocfg.c  dtbocfg.ko  dtbocfg.mod.c  dtbocfg.mod.o  dtbocfg.o  dtbocfg.rb  LICENSE  
+  Makefile  modules.order  Module.symvers  Readme.ja.md  Readme.md
+  ```
