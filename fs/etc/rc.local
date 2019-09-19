@@ -17,6 +17,8 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-/bin/autoMail163.py
+if [ -f "/boot/email" ]; then
+  /bin/autoMail163.py
+fi
 
 exit 0
