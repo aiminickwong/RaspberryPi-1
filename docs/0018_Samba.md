@@ -2,6 +2,7 @@
 
 ## 参考文档
 
+* [Samba/CIFS](https://www.raspberrypi.org/documentation/remote-access/samba.md)
 * [Create a NAS with your Raspberry Pi and Samba](https://howtoraspberrypi.com/create-a-nas-with-your-raspberry-pi-and-samba/)
 * [smb.conf — The configuration file for the Samba suite](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)
 * [浅析 fstab 与移动硬盘挂载方法](http://shumeipai.nxez.com/2019/01/17/fstab-and-mobile-hard-disk-mounting-method.html)

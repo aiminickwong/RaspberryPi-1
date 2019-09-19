@@ -197,7 +197,10 @@ https://github.com/raspberrypi/userland/tree/master/host_applications/linux/apps
 
 ## Device Tree Blob Overlay Configuration File System
 
-* 如果你想知道`configfs`中`overlay`是怎么工作的，可以参考: https://github.com/ikwzm/dtbocfg
+* 如果你想知道`configfs`中`overlay`是怎么工作的，可以参考: 
+  * [R-Car/DT-Overlays](https://elinux.org/R-Car/DT-Overlays)
+  * [OF: DT-Overlay configfs interface](https://github.com/raspberrypi/linux/commit/54ca6e08ce89f5e33de78db7deff727c12513397)
+  * https://github.com/ikwzm/dtbocfg
 * `git clone https://github.com/ikwzm/dtbocfg.git`
 * `cd dtbocfg`
 * `make`

@@ -92,7 +92,9 @@ smtpserver.quit()
 # wait dhcp get ip
 sleep 10
 
-/bin/autoMail163.py
+if [ -f "/boot/email" ]; then
+  /bin/autoMail163.py
+fi
 
 exit 0
 ```

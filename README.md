@@ -20,6 +20,9 @@
 
 ## 笔记文档
 
+* [0030_OpenCV.md](docs/0030_OpenCV.md)
+* [0029_Linux_Kernel_Compile.md](docs/0029_Linux_Kernel_Compile.md)
+* [0028_VNC_Connect.md](docs/0028_VNC_Connect.md)
 * [0027_git_server.md](docs/0027_git_server.md)
 * [0026_libdrm_modetest.md](docs/0026_libdrm_modetest.md)
 * [0025_Vim_Support_Mouse_Paste.md](docs/0025_Vim_Support_Mouse_Paste.md)
