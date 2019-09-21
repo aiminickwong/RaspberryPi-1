@@ -20,6 +20,7 @@
 
 ## 笔记文档
 
+* [0031_Bluetooth_SPP.md](docs/0031_Bluetooth_SPP.md)
 * [0030_OpenCV.md](docs/0030_OpenCV.md)
 * [0029_Linux_Kernel_Compile.md](docs/0029_Linux_Kernel_Compile.md)
 * [0028_VNC_Connect.md](docs/0028_VNC_Connect.md)
