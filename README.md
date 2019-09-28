@@ -20,6 +20,7 @@
 
 ## 笔记文档
 
+* [0033_MBR_GPT.md](docs/0033_MBR_GPT.md)
 * [0032_Boot_Dir_Support_SSH_Auto_Run.md](docs/0032_Boot_Dir_Support_SSH_Auto_Run.md)
 * [0031_Bluetooth_SPP.md](docs/0031_Bluetooth_SPP.md)
 * [0030_OpenCV.md](docs/0030_OpenCV.md)
