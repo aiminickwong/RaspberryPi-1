@@ -20,6 +20,8 @@
 
 ## 笔记文档
 
+* [0035_bash_complete.md](docs/0035_bash_complete.md)
+* [0034_Gerrit.md](docs/0034_Gerrit.md)
 * [0033_MBR_GPT.md](docs/0033_MBR_GPT.md)
 * [0032_Boot_Dir_Support_SSH_Auto_Run.md](docs/0032_Boot_Dir_Support_SSH_Auto_Run.md)
 * [0031_Bluetooth_SPP.md](docs/0031_Bluetooth_SPP.md)
