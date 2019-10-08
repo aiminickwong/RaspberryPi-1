@@ -20,6 +20,8 @@
 
 ## 笔记文档
 
+* [0037_Tensorflow_Install.md](docs/0037_Tensorflow_Install.md)
+* [0036_Python_Call_C_Share_Lib.md](docs/0036_Python_Call_C_Share_Lib.md)
 * [0035_bash_complete.md](docs/0035_bash_complete.md)
 * [0034_Gerrit.md](docs/0034_Gerrit.md)
 * [0033_MBR_GPT.md](docs/0033_MBR_GPT.md)
