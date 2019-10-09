@@ -20,6 +20,8 @@
 
 ## 笔记文档
 
+* [0039_RTIMULib.md](docs/0039_RTIMULib.md)
+* [0038_Auto_Login_Via_TTY.md](docs/0038_Auto_Login_Via_TTY.md)
 * [0037_Tensorflow_Install.md](docs/0037_Tensorflow_Install.md)
 * [0036_Python_Call_C_Share_Lib.md](docs/0036_Python_Call_C_Share_Lib.md)
 * [0035_bash_complete.md](docs/0035_bash_complete.md)
