@@ -1,4 +1,8 @@
-# Qt 4
+# Qt 4 OpenGL
+
+## 参考源代码
+
+* https://github.com/openwebos/qt/tree/master/examples/opengl/hellogl
 
 ## Dependens
 
@@ -21,3 +25,9 @@ GeneratedFiles  Makefile  Makefile.Debug  Makefile.Release  objects  Output
 ```
 
 ![images/Qt_4.png](images/Qt_4.png)
+
+## HelloGL
+
+* https://github.com/ZengjfOS/RaspberryPi/tree/Qt4_HelloGL
+
+![images/Qt_4_HelloGL.png](images/Qt_4_HelloGL.png)
