@@ -20,6 +20,7 @@
 
 ## 笔记文档
 
+* [0042_ROS.md](docs/0042_ROS.md)
 * [0041_Add_Swap_Partition.md](docs/0041_Add_Swap_Partition.md)
 * [0040_Qt_4_OpenGL.md](docs/0040_Qt_4_OpenGL.md)
 * [0039_RTIMULib.md](docs/0039_RTIMULib.md)
