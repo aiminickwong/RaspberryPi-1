@@ -20,6 +20,7 @@
 
 ## 笔记文档
 
+* [0045_SoC_Device_Tree.md](docs/0045_SoC_Device_Tree.md)
 * [0044_Create_Raspbian_Image.md](docs/0044_Create_Raspbian_Image.md)
 * [0043_Docker.md](docs/0043_Docker.md)
 * [0042_ROS.md](docs/0042_ROS.md)

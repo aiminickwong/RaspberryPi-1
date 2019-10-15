@@ -209,3 +209,20 @@ https://github.com/raspberrypi/userland/tree/master/host_applications/linux/apps
   dtbocfg.c  dtbocfg.ko  dtbocfg.mod.c  dtbocfg.mod.o  dtbocfg.o  dtbocfg.rb  LICENSE  
   Makefile  modules.order  Module.symvers  Readme.ja.md  Readme.md
   ```
+
+## Linux Kernel configfs
+
+* `drivers/of/Kconfig`
+  ```
+  config OF_CONFIGFS
+      bool "Device Tree Overlay ConfigFS interface"
+      select CONFIGFS_FS
+      select OF_OVERLAY
+      help
+        Enable a simple user-space driven DT overlay interface.
+  ```
+* `drivers/of/Makefile`
+  ```
+  obj-$(CONFIG_OF_CONFIGFS) += configfs.o
+  ```
+* `drivers/of/Kconfig`
