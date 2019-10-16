@@ -44,7 +44,7 @@
       };
   
       chosen {
-          bootargs = "coherent_pool=1M 8250.nr_uarts=1 cma=64M";
+          bootargs = "coherent_pool=1M 8250.nr_uarts=1 cma=64M zengjf ";
       };
   
       aliases {
@@ -116,6 +116,10 @@
    clocks            memory               serial-number   zengjf   <--------添加的节点
    compatible        memreserve          '#size-cells'
    cpus              model                soc
+  ```
+* `cat /proc/cmdline`
+  ```
+  coherent_pool=1M 8250.nr_uarts=0 cma=64M zengjf  bcm2708_fb.fbwidth=1280 bcm2708_fb.fbheight=720 bcm2708_fb.fbswap=1 smsc95xx.macaddr=DC:A6:32:17:47:91 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  dwc_otg.lpm_enable=1 console=ttyS0,115200 console=tty1 root=PARTUUID=48597d87-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles modules-load=dwc2,g_ether
   ```
 
 ## i2c1 dts

@@ -4,6 +4,7 @@
 
 * [How compile a loadable kernel module without recompiling kernel](https://raspberrypi.stackexchange.com/questions/39845/how-compile-a-loadable-kernel-module-without-recompiling-kernel)
 * [Compiling Kernel Modules for Raspberry Pi](https://bchavez.bitarmory.com/compiling-kernel-modules-for-raspberry-pi/#)
+* [How to pass a value to a builtin Linux kernel module at boot time?](https://stackoverflow.com/questions/17659798/how-to-pass-a-value-to-a-builtin-linux-kernel-module-at-boot-time)
 
 ## install kernel headers
 
